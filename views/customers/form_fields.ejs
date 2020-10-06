@@ -1,0 +1,17 @@
+<%if(customer != null && customer != ''){ %>
+<div>
+    <div>
+    <label>Name</label>
+    <input type = "text" name="name" value = "<%= customer.name %>" required />
+    </div>
+    <div>
+    <label>Address</label>
+    <input type = "varchar" name = "address" value = "<%= customer.address %>" required />
+    </div>
+    <div>
+    <label>Description</label>
+    <textarea name = "description"><%= customer.description %></textarea> 
+    </div>
+</div>
+<%}%>
+    
